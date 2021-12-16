@@ -18,8 +18,8 @@
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 
-			document.body.appendChild( VRButton.createButton( renderer ) );
-			renderer.xr.enabled = true;
+  			renderer.xr.enabled = true;
+  			document.body.appendChild(VRButton.createButton(renderer));
 
 			const geometry = new THREE.BoxGeometry();
 			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
